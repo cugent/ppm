@@ -9,22 +9,7 @@ class ProductList extends React.Component {
   render() {
     return (
       <div className="margin">
-        <div>
-          <h1>Products List</h1>
-          <nav aria-label="Page navigation example">
-            <ul className="pagination justify-content-end">
-              <li className="page-item">
-                <span className="page-link">1</span>
-              </li>
-              <li className="page-item">
-                <span className="page-link">2</span>
-              </li>
-              <li className="page-item">
-                <span className="page-link">3</span>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <h1>Products List</h1>
         {this.props.items.map((item, index) => {
           return (
             <div className="animated fadeIn" key={index} style={{ display: "inline-block", paddingLeft: "75px", paddingBottom: "75px" }}>
